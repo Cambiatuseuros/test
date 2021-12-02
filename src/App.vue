@@ -8,6 +8,16 @@
   </div>
 </template>
 
+<script>
+export default {
+  mounted(){
+    document.addEventListener('deviceready', () => {
+      navigator.splashscreen.hide()
+    })
+  }
+}
+</script>
+
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
